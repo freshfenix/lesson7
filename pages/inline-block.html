@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Inline-Block</title>
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="site-nav" aria-label="Навігація сайту">
+        <ul>
+          <li><a href="../index.html">Головна</a></li>
+          <li><a href="display.html">Display</a></li>
+          <li><a href="float.html">Float</a></li>
+          <li><a href="inline-block.html" class="active">Inline-Block</a></li>
+          <li><a href="normalize.html">Normalize</a></li>
+          <li><a href="reset.html">Reset</a></li>
+          <li><a href="overflow.html">Overflow</a></li>
+          <li><a href="position.html">Position</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h1>Inline-Block — демонстрація</h1>
+
+      <section class="demo">
+        <h2>1. Inline vs Inline-Block vs Block</h2>
+        <div class="demo-row">
+          <span class="demo-item">inline (span)</span>
+          <a href="https://github.com/freshfenix/lesson_7" target="_blank" class="demo-item">inline (a)</a>
+          <span class="demo-item d-inline-block">inline-block (span)</span>
+        </div>
+        <div class="demo-row">
+          <button class="demo-item">Button</button>
+          <input class="demo-item" type="text" placeholder="input">
+          <span class="demo-item d-inline-block">inline>inline-block C</span>
+        </div>
+        <div class="demo-row">
+          <div class="demo-item">block 1 (div)</div>
+          <div class="demo-item d-inline-block">block 2>display:inline-block (div)</div>
+        </div>
+        <p class="demo-note">Порада: змінюйте display у inline elements, щоб побачити різницю; inline не приймає
+          width/height, inline-block — приймає.</p>
+      </section>
+
+      <section class="demo">
+        <h3>2. Пробіли між inline-block елементами (whitespace)</h3>
+        <div class="demo-row">
+          <div class="demo-inline-space">
+            <span class="demo-item">A</span>
+            <span class="demo-item">B</span>
+            <span class="demo-item">C</span>
+          </div>
+        </div>
+        <p class="demo-note">Ці елементи розділені пробілами в HTML. Щоб прибрати проміжок — можна видалити пробіли
+          або використовувати font-size:0 на контейнері.</p>
+      </section>
+
+      <section class="demo">
+        <h3>3. Vertical-align</h3>
+        <div class="demo-row demo-vertical">
+          <span class="demo-item va-baseline">baseline</span>
+          <span class="demo-item va-top">top</span>
+          <span class="demo-item va-middle">middle</span>
+          <span class="demo-item va-bottom">bottom</span>
+        </div>
+        <p class="demo-note">vertical-align працює з inline/inline-block/table-cell; експериментуйте зі значеннями.
+        </p>
+      </section>
+
+      <section class="demo">
+        <h3>4. Короткі пояснення та код</h3>
+        <pre class="demo-code">&lt;span style="display:inline-block"&gt;inline-block&lt;/span&gt;
+&lt;a style="display:block; width:100%"&gt;block&lt;/a&gt;
+/* Щоб прибрати whitespace між inline-block елементами: font-size:0 на контейнері */
+</pre>
+      </section>
+
+    </div>
+  </main>
+</body>
+
+</html>

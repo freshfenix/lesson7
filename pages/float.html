@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Float</title>
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="site-nav" aria-label="Навігація сайту">
+        <ul>
+          <li><a href="../index.html">Головна</a></li>
+          <li><a href="display.html">Display</a></li>
+          <li><a href="float.html" class="active">Float</a></li>
+          <li><a href="inline-block.html">Inline-Block</a></li>
+          <li><a href="normalize.html">Normalize</a></li>
+          <li><a href="reset.html">Reset</a></li>
+          <li><a href="overflow.html">Overflow</a></li>
+          <li><a href="position.html">Position</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h1>Float</h1>
+      <section class="demo">
+        <h2>1. Float vs Flex</h2>
+        <div class="demo-row demo-float clearfix">
+          <div class="demo-box float-left">Float left</div>
+          <div class="demo-box float-right">Float right</div>
+          <p class="mt-6">Текст, що обтікає плаваючі блоки.</p>
+          <p class="mt-6">Текст, що обтікає плаваючі блоки.</p>
+          <p class="mt-6">Текст, що обтікає плаваючі блоки.</p>
+          <p class="mt-6">Текст, що обтікає плаваючі блоки.</p>
+          <p class="mt-6">Текст, що обтікає плаваючі блоки.</p>
+          <p class="mt-6">Текст, що обтікає плаваючі блоки.</p>
+          <p class="mt-6">Текст, що обтікає плаваючі блоки.</p>
+          <p class="mt-6">Текст, що обтікає плаваючі блоки.</p>
+        </div>
+
+        <div class="demo-row">
+          <h4>Додаткові приклади з &lt;img&gt; (float)</h4>
+          <p>Зліва плаваюче зображення — текст обтікає його справа:</p>
+          <div class="clearfix">
+            <img class="float-left float-img" src="../images/background.webp" alt="background image">
+            <p>Це приклад довшого тексту, який обтікає плаваюче зображення ліворуч. Мета — показати, як текст обтікає
+              зображення різних розмірів. Продовжуйте читати текст, щоб побачити обтікання, абзаци, та поведінку при
+              суміжних елементах.</p>
+            <p>Ще трохи тексту, щоб демонстрація була помітнішою. Ви можете змінювати розмір зображення, і текст
+              автоматично підлаштується.</p>
+          </div>
+
+          <p>Праворуч плаваюче зображення — текст обтікає його зліва:</p>
+          <div class="clearfix">
+            <img class="float-right float-img" src="../images/background.webp" alt="background image">
+            <p>Тут інший приклад зображення праворуч. Зверніть увагу на відступи навколо зображення і як воно «висить»
+              праворуч, тоді як текст заповнює простір ліворуч.</p>
+            <p>Додаємо ще абзац, щоб перевірити багаторядкове обтікання і мобільну поведінку.</p>
+          </div>
+
+          <p>Приклад з використанням &lt;figure&gt; та &lt;figcaption&gt; (float + підпис):</p>
+          <div class="clearfix">
+            <figure class="figure float-left">
+              <img class="float-img" src="../images/background.webp" alt="background image">
+              <figcaption class="figcaption">Figure: приклад зображення з підписом</figcaption>
+            </figure>
+            <p>Текст поруч із фігурою. Підпис зображення відокремлений елементом &lt;figcaption&gt; і стилізований, щоб
+              не зливатися з основним контентом.</p>
+          </div>
+
+          <p>Очищення (clear): після плаваючих елементів можна помістити блок із класом <code>clearfix</code> або
+            використовувати <code>clear</code> на поточному елементі.</p>
+          <div class="clearfix"></div>
+        </div>
+
+        <div class="demo-row demo-flex-row">
+          <div class="demo-item demo-flex-item">Flex 1</div>
+          <p class="mt-6">Текст, з флекс-елементами</p>
+          <p class="mt-6">Текст, з флекс-елементами</p>
+          <div class="demo-item demo-flex-item">Flex 2</div>
+
+        </div>
+        <p class="demo-note">Flex — сучасний інструмент для вирівнювання; float — історичний прийом для обтікання.
+        </p>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>

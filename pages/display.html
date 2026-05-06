@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Display</title>
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="site-nav" aria-label="Навігація сайту">
+        <ul>
+          <li><a href="../index.html">Головна</a></li>
+          <li><a href="display.html" class="active">Display</a></li>
+          <li><a href="float.html">Float</a></li>
+          <li><a href="inline-block.html">Inline-Block</a></li>
+          <li><a href="normalize.html">Normalize</a></li>
+          <li><a href="reset.html">Reset</a></li>
+          <li><a href="overflow.html">Overflow</a></li>
+          <li><a href="position.html">Position</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h1>Display</h1>
+      <section class="demo">
+        <h2>Display — експерименти</h2>
+        <div class="demo-row">
+          <h4>1. span (inline) та span.d-block (inline>block)</h4>
+          <div class="demo-examples">
+            <p>span (за замовчуванням inline): <span class="demo-item">inline span</span></p>
+            <p>span з класом <code>.d-block</code> (inline&gt;block): <span
+                class="demo-item d-block">span.d-block</span></p>
+          </div>
+        </div>
+
+        <div class="demo-row">
+          <h4>2. div (block) та div.d-inline (block&gt;inline)</h4>
+          <div class="demo-item block">div (block)</div>
+          <div class="demo-item d-inline">div.d-inline (block&gt;inline)</div>
+        </div>
+
+        <div class="demo-row">
+          <h4>3. Inline-block приклади</h4>
+          <span class="demo-item d-inline-block">inline-block A</span>
+          <span class="demo-item d-inline-block">inline-block B</span>
+        </div>
+
+        <div class="demo-row">
+          <h4>4. Flex-контейнер — показове вирівнювання</h4>
+          <p class="demo-note">Приклади: перший елемент має <em>flex:2</em>, другий — <em>flex:1</em>, третій змінює
+            порядок (<em>order</em>).</p>
+          <div class="demo-flex-row">
+            <div class="demo-flex-item flex-2">flex (flex:2)</div>
+            <div class="demo-flex-item flex-1">flex (flex:1)</div>
+            <div class="demo-flex-item order-2">flex (order:2)</div>
+            <div class="demo-flex-item">flex extra</div>
+          </div>
+        </div>
+
+        <div class="demo-row">
+          <h4>5. Grid-контейнер — нестандартна розмітка</h4>
+          <p class="demo-note">Grid дозволяє створювати несподівані макети: осередки можуть займати кілька колонок або
+            рядків.</p>
+          <div class="demo-grid">
+            <div class="demo-item">cell 1</div>
+            <div class="demo-item grid-span-2">cell 2 — spans 2 cols</div>
+            <div class="demo-item grid-tall">cell 3 — spans 2 rows</div>
+            <div class="demo-item">cell 4</div>
+            <div class="demo-item">cell 5</div>
+          </div>
+        </div>
+
+        <div class="demo-row demo-flex-row">
+          <div class="b-box">
+            <p>
+              box-sizing: border-box;
+              width: 200px;
+              height: 200px;
+              background: var(--bg);
+              margin: 20px;
+              padding: 20px;
+              border: 10px solid;
+            </p>
+          </div>
+          <div class="c-box">
+            <p>
+              box-sizing: content-box;
+              width: 200px;
+              height: 200px;
+              background: var(--bg);
+              margin: 20px;
+              padding: 20px;
+              border: 10px solid;
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>

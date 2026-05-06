@@ -1,0 +1,16 @@
+# Ignore installed agent skills
+.agents/skills/
+
+# Node modules
+node_modules/
+
+# Environment files
+.env
+.env.local
+
+# Editor directories
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
