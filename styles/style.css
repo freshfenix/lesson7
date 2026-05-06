@@ -87,6 +87,7 @@ body.home main {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 body.home {
@@ -123,15 +124,17 @@ body.home main {
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.index-demo {
-  position: fixed;
-  top: 0;
-  left: 10%;
+.main-demo {
   width: 80%;
-  height: 120px;
+  min-height: 120px;
   text-align: center;
   background: var(--bg);
   padding: 20px;
+  order: -1;
+}
+
+.main-container {
+  padding: 15px;
 }
 
 /* DEMO */
@@ -216,6 +219,7 @@ body.home main {
   gap: 12px;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .demo-flex-item {
